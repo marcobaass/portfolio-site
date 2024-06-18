@@ -1,0 +1,32 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+  }
+
+  ol, ul {
+    list-style: none;
+  }
+
+  img,picture, svg, video {
+    display: block;
+    max-width: 100%;
+  }
