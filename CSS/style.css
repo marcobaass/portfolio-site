@@ -1,0 +1,12 @@
+@import "font.css";
+
+body {
+  background-image: url('/IMG/Filmlook.gif');
+}
+
+.typo {
+  font-family: var(--font);
+  font-size: 6rem;
+  text-decoration: none;
+  color: whitesmoke;
+}
