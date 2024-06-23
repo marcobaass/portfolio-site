@@ -1,5 +1,6 @@
 function changeFont(element) {
-  const fontArray = ['PlaywriteES', 'Roboto', 'Bungee', 'Indie Flower', 'Passion One', 'Lobster'];
+  // const fontArray = ['PlaywriteES', 'Roboto', 'Bungee', 'Indie Flower', 'Passion One', 'Lobster'];
+  const fontArray = ['Montserrat', 'Noto Sans', 'Open Sans', 'Raleway', 'Roboto', 'Poppins'];
   let rnd = Math.floor(Math.random() * fontArray.length);
   element.style.setProperty('--font', fontArray[rnd]);
 }
@@ -8,18 +9,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const spans = document.querySelectorAll('.typo');
   const myName = ['M', 'A', 'R', 'C', 'O', 'B', 'A', 'A', 'S', 'S'];
 
-  spans.forEach((span, index) => {
+  async function animateCharacter(span, char, index) {
     let isFixed = false; // Flag to track if the character is fixed
 
     // Initial random character assignment
     let intervalId = setInterval(() => {
       if (!isFixed) {
         const randomChar = getRandomUppercaseChar();
-        if (randomChar !== myName[index]) {
+        if (randomChar !== char) {
           span.textContent = randomChar;
         } else {
           clearInterval(intervalId);
-          span.textContent = myName[index];
+          span.textContent = char;
           span.style.setProperty('--font', 'Poppins');
           isFixed = true;
         }
@@ -36,13 +37,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Clear the interval after the desired time and fix the character
-    setTimeout(() => {
-      clearInterval(intervalId);
-      span.textContent = myName[index]; // Set to the fixed character finally
-      span.style.setProperty('--font', 'Poppins'); // Set the fixed font style
-      isFixed = true; // Mark the character as fixed
-    }, 25 * 250 + index * 100);
-  });
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        clearInterval(intervalId);
+        span.textContent = char; // Set to the fixed character finally
+        span.style.setProperty('--font', 'Poppins'); // Set the fixed font style
+        isFixed = true; // Mark the character as fixed
+        resolve();
+      }, 250);
+    });
+  }
+
+  (async function animateName() {
+    for (let i = 0; i < myName.length; i++) {
+      await animateCharacter(spans[i], myName[i], i);
+    }
+  })();
 });
 
 function getRandomUppercaseChar() {
