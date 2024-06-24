@@ -2,11 +2,22 @@
 
 body {
   background-image: url('/IMG/Filmlook.gif');
+  overflow: hidden;
+}
+
+body.landingpage {
+  position: relative;
 }
 
 .typo {
   font-family: var(--font);
-  font-size: 3rem;
+  font-size: 4.0rem;
   text-decoration: none;
   color: whitesmoke;
+  line-height: 0.8;
+}
+
+.space {
+  width: 6.15em;
+  display: inline-block;
 }

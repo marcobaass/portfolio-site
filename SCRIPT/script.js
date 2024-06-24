@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           clearInterval(intervalId);
           span.textContent = char;
-          span.style.setProperty('--font', 'Poppins');
+          span.style.setProperty('--font', 'Lato');
           isFixed = true;
         }
       }
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
         clearInterval(intervalId);
         span.textContent = char; // Set to the fixed character finally
-        span.style.setProperty('--font', 'Poppins'); // Set the fixed font style
+        span.style.setProperty('--font', 'Abril Fatface'); // Set the fixed font style
         isFixed = true; // Mark the character as fixed
         resolve();
       }, 250);
