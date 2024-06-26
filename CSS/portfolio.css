@@ -1,0 +1,13 @@
+.text-container {
+  display: flex;
+  min-width: 45ch;
+  max-width: 70ch;
+  margin: 0 auto;
+  padding: 2em;
+  text-wrap: pretty;
+}
+
+.tech-stack {
+  width: 18rem;
+  padding-left: 1em;
+}
