@@ -42,30 +42,34 @@ a {
 
 a:hover {
   color: rgb(166, 52, 70);
-  text-shadow: 1px 1px 1px black; text-shadow: -1px -1px 1px black;
+  text-shadow: 1px 1px 1px black;
+  text-shadow: -1px -1px 1px black;
 }
 
-@media only screen and (max-width: 375px) {
+/* ------------------------------------------------------------------------- */
 
+@media only screen and (max-width: 700px) {
   .mobile {
-    position: sticky;
+    position: absolute;
   }
 
-
-  nav {
-    position: sticky;
+  nav.mobile {
+    position: fixed;
     top: 0;
     left: 0;
-    border-radius: 0 0 24px 24px;
-    margin: 0;
+    border-radius: 0 0 24px 0;
+    margin-right: 40%;
   }
 
   .hamburger {
+    position: fixed;
+    top: 0;
+    left: 0;
     color: rgb(166, 52, 70);
     font-size: 1.25rem;
     width: 2.5rem;
     height: 2.5rem;
-    margin: 0.75rem 0.75rem;
+    margin: 0.75rem;
     z-index: 1;
   }
 
@@ -80,15 +84,20 @@ a:hover {
   ul {
     display: flex;
     flex-direction: column;
-    margin: 4rem 0.75rem;
-    gap: 1.5rem;
+    margin: 0.75rem 0.75rem;
   }
 
   li {
     font-family: "Roboto Flex", sans-serif;
     font-size: 2rem;
     font-weight: 100;
-    padding: 0.3rem 0;
+    padding: 4rem;
   }
+}
 
+@media only screen and (min-width: 700px) {
+
+  .mobile {
+    display: none;
+  }
 }
