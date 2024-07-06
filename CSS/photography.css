@@ -1,0 +1,12 @@
+img {
+  max-width: 100%;
+}
+
+/*media queries*/
+
+@media only screen and (min-width: 810px) {
+  .portrait {
+    max-width: 50%;
+  }
+
+}
