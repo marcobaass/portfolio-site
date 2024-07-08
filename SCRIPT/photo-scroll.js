@@ -55,4 +55,3 @@ const zoomObserver = new IntersectionObserver ((entries, zoomObserver) => {
 images.forEach(image => {
   zoomObserver.observe(image);
 });
-

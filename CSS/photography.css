@@ -1,3 +1,6 @@
+body {
+  background-image: url('/IMG/Filmlook.gif');
+}
 img {
   max-width: 100%;
   margin: 0 auto 75%;
@@ -21,6 +24,14 @@ img {
 @media only screen and (min-width: 810px) {
   .portrait {
     max-width: 50%;
+  }
+
+  .left {
+    margin: 0 auto 0 0;
+  }
+
+  .right {
+    margin: 0 0 0 auto;
   }
 
 }
