@@ -1,23 +1,62 @@
 @import "font.css";
 
 body {
+  position: relative;
   background-image: url('/IMG/Filmlook.gif');
   overflow: hidden;
-}
-
-body.landingpage {
-  position: relative;
+  margin: 0;
 }
 
 .typo {
-  font-family: var(--font);
+  font-family: 'ITC Eras Light';
   font-size: 4.0rem;
   text-decoration: none;
-  color: whitesmoke;
+  color: #00FFD4;
   line-height: 0.8;
 }
 
 .space {
   width: 6.15em;
   display: inline-block;
+}
+
+/*letter positions*/
+
+.firstname {
+  position: absolute;
+  display: grid;
+  grid-template: 1fr 1fr 1fr/
+                 1fr 1fr 1fr 1fr 1fr;
+  top: 10px;
+  left: 20px;
+}
+
+.item1 {
+  grid-area: 2 / 1 / 6 / 3;
+  letter-spacing: 19px;
+}
+.item2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.item3 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.item4 {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.glow {
+  font-size: 55px;
+  color: #fff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00FFD4, 0 0 40px #00FFD4, 0 0 50px #00FFD4, 0 0 60px #00FFD4, 0 0 70px #00FFD4;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #97FFCF, 0 0 40px #97FFCF, 0 0 50px #97FFCF, 0 0 60px #97FFCF, 0 0 70px #97FFCF, 0 0 80px #97FFCF;
+  }
 }
