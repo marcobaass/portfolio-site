@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url('/IMG/Filmlook.gif');
+  background-color: black;
   margin: 0;
 }
 
