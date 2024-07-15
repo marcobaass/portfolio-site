@@ -1,18 +1,20 @@
 footer {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
   background-color: black;
   color: white;
+  padding: 4rem 0 4rem;
+  gap: 1rem;
 }
 
 footer p, .contact {
-  padding: 4rem 0 4rem;
+
 }
 
 .contact {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 1rem;
   font-size: 2rem;
 }
@@ -22,7 +24,102 @@ footer p {
   color: #00FFD4;
   font-family: 'ITC Eras Light';
   font-size: calc(18px + 0.390625vw);
-  letter-spacing: 4px;
-  text-shadow: 4px 4px 8px #00FFD4, 0 0 10px #fff, 0 0 10px #fff, 0 0 30px #00FFD4, 0 0 20px #00FFD4, 0 0 25px #00FFD4, 0 0 30px #00FFD4, 0 0 35px #00FFD4;
-  /* margin: 2rem 0; */
+  letter-spacing: 4px;  /* margin: 2rem 0; */
+}
+
+.contact i {
+  color: #00FFD4;
+  font-size: calc(2.5rem + 0.390625vw);
+  margin: calc(1rem + 0.390625vw);
+}
+
+.contact a:hover {
+  color: #00FFD4;
+  text-shadow: 1px 1px 2px #00FFD4, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00FFD4, 0 0 20px #00FFD4, 0 0 25px #00FFD4, 0 0 30px #00FFD4, 0 0 35px #00FFD4;
+}
+
+.hover:hover {
+  cursor: pointer;
+  color: #00FFD4;
+  text-shadow: 1px 1px 2px #00FFD4, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00FFD4, 0 0 20px #00FFD4, 0 0 25px #00FFD4, 0 0 30px #00FFD4, 0 0 35px #00FFD4;
+}
+
+
+
+
+
+
+/* Javascript classes */
+
+.phonenumber {
+  display: none;
+}
+
+.phonenumber.visible {
+  display: inline-block;
+  text-wrap: nowrap;
+  position:absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #00FFD4;
+  border-radius: 8px;
+  padding: 4px 8px;
+  box-shadow: 1px 1px 2px #00FFD4, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00FFD4, 0 0 8px #00FFD4, 0 0 10px #00FFD4, 0 0 12px #00FFD4, 0 0 15px #00FFD4;;
+}
+
+.content {
+  display: none;
+}
+
+.content.visible {
+  background-color: black;
+  display: inline-block;
+  text-wrap: balance;
+  position:fixed;
+  inset: 3vh;
+  border: 1px solid #00FFD4;
+  padding: 16px 32px;
+  box-shadow: 1px 1px 2px #00FFD4, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00FFD4, 0 0 8px #00FFD4, 0 0 10px #00FFD4, 0 0 12px #00FFD4, 0 0 15px #00FFD4;
+  overflow-y: scroll;
+  scroll-behavior: contain;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  margin-inline: auto;
+  max-width: 800px;
+}
+
+
+.impressum-close {
+  display: none;
+}
+
+.impressum-close.visible {
+  display: inline-block;
+  color: #00FFD4;
+  background-color: black;
+  border: none;
+  position: fixed;
+  top:6vh;
+  right: 6vh;
+  z-index: 2000;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.impressum-close:hover {
+  color: #00FFD4;
+  text-shadow: 1px 1px 2px #00FFD4, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00FFD4, 0 0 20px #00FFD4, 0 0 25px #00FFD4, 0 0 30px #00FFD4, 0 0 35px #00FFD4;
+}
+
+body.blur::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  backdrop-filter: blur(5px); /* Blur effect */
+  z-index: 999; /* Just below the Impressum */
 }
