@@ -8,10 +8,6 @@ footer {
   gap: 1rem;
 }
 
-footer p, .contact {
-
-}
-
 .contact {
   position: relative;
   display: flex;

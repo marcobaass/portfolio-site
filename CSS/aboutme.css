@@ -4,7 +4,7 @@ body {
 
 /* fonts */
 
-p {
+article p {
   /* font-family: 'harlow solid italic'; */
   color: #00FFD4;
   font-family: 'ITC Eras Light';
@@ -56,4 +56,42 @@ article p {
   img {
     width: 25%;
   }
+}
+
+/* impressum */
+
+.impressum {
+  /* max-width: calc(70ch + (70 * 4px));
+  padding: 2em 2em 0 2em; */
+  /* margin-inline: auto; */
+  text-wrap: balance;
+  text-align: start;
+  color: #00FFD4;
+  font-family: 'ITC Eras Light';
+  font-size: calc(18px + 0.390625vw);
+  letter-spacing: 4px;
+}
+
+.impressum h1{
+  font-size: calc(2.5rem + 0.390625vw);
+  margin-bottom: 2rem;
+}
+
+.impressum p{
+  margin-bottom: 1rem;
+  max-width: 75ch;
+}
+
+.impressum li{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.content ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 3rem;
+  flex-direction: column;
 }
