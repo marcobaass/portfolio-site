@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
   <script src="/SCRIPT/portfolio-hamburger.js" defer></script>
   <script src="/SCRIPT/phone-nr-on-click.js" defer></script>
+  <script src="/SCRIPT/portfolio-scrolling.js" defer></script>
   <title>Document</title>
 </head>
 
@@ -42,12 +43,12 @@
 
   <section>
 
-    <div class="img-landscape">
+    <div class="img-landscape observation hidden" >
       <img src="/IMG/portfolio-site/gifs/movienights-landing-page.gif" alt="">
     </div>
 
 
-    <div class="text-container" id="text1">
+    <div class="text-container observation hidden" id="text1">
       <p>
         Movie Nights was the final project of my web development bootcamp at Le Wagon Berlin. In a team of 5 people we realized this project from the wireframe to the first Figma prototype to the realization in Ruby on Rails. We implemented different elements with Javascript through Stimulus in Rails, used TMDB as API and PostgresSQL as database. The site includes a dynamic chat, a search function for movies, and a map for mapping movie theater addresses.
       </p>
@@ -67,21 +68,21 @@
     </div>
 
     <div class="img-portrait">
-      <img id="img-left" src="/IMG/portfolio-site/gifs/movienights-movie-search.gif" alt="">
-      <img id="img-right" src="/IMG/portfolio-site/gifs/movienights-movie-event.gif" alt="">
+      <img id="img-left" class="hidden observation" src="/IMG/portfolio-site/gifs/movienights-movie-search.gif" alt="">
+      <img id="img-right" class="hidden observation" src="/IMG/portfolio-site/gifs/movienights-movie-event.gif" alt="">
     </div>
 
-    <div class="text-container" id="text2">
+    <div class="text-container observation hidden" id="text2">
       <p>
         The idea behind the project was to give enthusiastic moviegoers the opportunity to connect with each other and arrange to go to the movies together. The app offers both recommended users and films based on your own favorites for films, genres and directors.  Other users can participate and chat with each other on their own event page, which is created by users. Even though it was a final project, we are still developing the app.
       </p>
     </div>
 
-    <div class="img-landscape">
+    <div class="img-landscape observation hidden">
       <img src="/IMG/portfolio-site/gifs/movienights-movie-chat.gif" alt="">
     </div>
 
-    <div class="text-container">
+    <div class="text-container observation hidden">
       <p>
         During the development of the app, I am mainly responsible for the front end part. This includes the implementation of the Figma design with HTML and CSS, as well as the integration of functions with Javascript, and the query of APIs such as mapbox and The Movie Data Base. The project has offered and continues to offer various challenges, which has led to a great learning experience.
       </p>
@@ -93,7 +94,7 @@
 
   <!-- footer -->
 
-  <footer>
+  <footer class="hidden observation">
 
     <div class="contact">
       <a href="https://www.linkedin.com/in/marcobaass/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -109,7 +110,7 @@
 
     <div class="impressum">
 
-      <button class="cookies-close">X</button>
+      <button class="impressum-close">X</button>
 
       <div class="content">
 

@@ -53,6 +53,14 @@ body {
   text-shadow: -1px 0px 1px #fff, 0px -1px 1px #fff, 0px 0px 8px #fff;
 }
 
+.hidden {
+  opacity: 0;
+}
+
+.observation {
+  transition: 750ms ease-in;
+}
+
 
 /*break points*/
 

@@ -1,35 +1,34 @@
-document.addEventListener('scroll', function() {
-  const imgLeft = document.getElementById('img-left');
-  const imgRight = document.getElementById('img-right');
+const elements = document.querySelectorAll('.observation');
+console.log(elements);
 
-  const text1Rect = document.getElementById('text1').getBoundingClientRect();
-  const text2Rect = document.getElementById('text2').getBoundingClientRect();
+const elementOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px -250px 0px"
+};
 
-  const viewportCenter = window.innerHeight / 2;
+const elementsObserver = new IntersectionObserver ((entries, elementsObserver) => {
+  entries.forEach(entry => {
+    console.log('Entry:', entry);
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      console.log('Intersecting:', entry.target);
+      entry.target.classList.remove('hidden');
+      elementsObserver.unobserve(entry.target);
+    }
+  })
+}, elementOptions);
 
-  let scale = 1;
-  let translateY = 0;
+elements.forEach(element => {
+  elementsObserver.observe(element);
+});
 
-  // Calculate the distance of each text container from the center of the viewport
-  const distanceFromCenter1 = Math.abs((text1Rect.top + text1Rect.bottom) / 2 - viewportCenter);
-  const distanceFromCenter2 = Math.abs((text2Rect.top + text2Rect.bottom) / 2 - viewportCenter);
+// --------- scroll up button -------------
 
-  // Determine the maximum distance from the center at which scaling should be 100%
-  const maxDistance = viewportCenter;
-
-  if (distanceFromCenter1 > maxDistance) {
-    const scrollPercent = 1 - (distanceFromCenter1 / maxDistance);
-    scale = 1 + scrollPercent * 0.5;
-    translateY = -((scrollPercent - 0.5) * 50);
-  }
-
-  if (distanceFromCenter2 > maxDistance) {
-    const scrollPercent = 1 - (distanceFromCenter2 / maxDistance);
-    scale = 1 + scrollPercent * 0.5;
-    translateY = (scrollPercent - 0.5) * 50;
-  }
-
-  // Apply transformations to both images
-  imgLeft.style.transform = `translateY(${translateY}px) scale(${scale})`;
-  imgRight.style.transform = `translateY(${translateY}px) scale(${scale})`;
+document.querySelector('.up').addEventListener('click', (e) => {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 });
