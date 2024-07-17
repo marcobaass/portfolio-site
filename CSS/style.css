@@ -36,7 +36,7 @@ body {
 /*letter positions*/
 
 .name-logo {
-  position: absolute;
+
   margin: 0 auto;
   display: grid;
   grid-template: var(--grid-space) var(--grid-space) var(--grid-space)/
@@ -204,7 +204,7 @@ nav a:hover {
     margin-bottom: 6%;
   }
   #front {
-    margin-top: 7%;
+    margin-top: 2%;
     margin-left: 19%;
   }
   #dev {
