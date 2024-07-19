@@ -3,6 +3,13 @@ body {
   background-color: black;
 }
 
+section > a > h1 {
+  font-family: 'harlow solid italic';
+  text-align: center;
+  padding: 2rem;
+  font-size: calc(6rem + 0.390625vw);
+}
+
 .text-container {
   /* display: flex;
   justify-content: center; */
@@ -58,13 +65,21 @@ body {
 }
 
 .observation {
-  transition: 750ms ease-in;
+  transition: 250ms ease-in;
 }
 
 
 /*break points*/
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
+
+  section > a > h1 {
+    font-family: 'harlow solid italic';
+    text-align: center;
+    padding: 0rem;
+    margin: 3.5rem 0 0 0;
+    font-size: calc(3rem + 0.390625vw);
+  }
 
   .img-portrait {
     display: flex;
@@ -86,7 +101,7 @@ body {
   }
 
   .img-landscape{
-    padding-top: 4em;
+    padding-top: 2em;
   }
 
   .tech-stack {
@@ -115,7 +130,7 @@ body {
 }
 
 
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 415px) {
 
   .img-portrait {
     display: flex;

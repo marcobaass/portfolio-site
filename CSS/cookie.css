@@ -195,3 +195,10 @@ body.blur::before {
     text-wrap: nowrap;
   }
 }
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    margin: 0;
+  }
+
+}

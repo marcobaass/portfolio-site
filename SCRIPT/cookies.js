@@ -52,4 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.toggle('blur');
     closing.classList.toggle('visible');
   });
+
+  document.addEventListener('click', (event) => {
+    if (cookiePolicy.classList.contains('visible') && !cookiePolicy.contains(event.target) && !cookieLink.contains(event.target)) {
+      cookiePolicy.classList.toggle('visible');
+    document.body.classList.toggle('blur');
+    closing.classList.toggle('visible');
+    }
+  })
 });

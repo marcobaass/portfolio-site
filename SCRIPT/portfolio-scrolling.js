@@ -3,7 +3,7 @@ console.log(elements);
 
 const elementOptions = {
   threshold: 0,
-  rootMargin: "0px 0px -250px 0px"
+  rootMargin: "0px 0px -200px 0px"
 };
 
 const elementsObserver = new IntersectionObserver ((entries, elementsObserver) => {

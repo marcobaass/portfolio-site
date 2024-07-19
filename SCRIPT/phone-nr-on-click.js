@@ -22,4 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.toggle('blur');
     closing.classList.toggle('visible');
   });
+
+  document.addEventListener('click', (event) => {
+    if (impressum.classList.contains('visible') && !impressum.contains(event.target) && !impressumLink.contains(event.target)) {
+      impressum.classList.toggle('visible');
+      document.body.classList.toggle('blur');
+      closing.classList.toggle('visible');
+    }
+  });
 });
