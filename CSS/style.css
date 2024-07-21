@@ -140,7 +140,7 @@ nav {
   flex-direction: column;
   align-items: center;
   margin-bottom: 10%;
-  gap: calc(var(--nav) / 3);
+  gap: calc(var(--nav) / 1.75);
   animation: nav 1s 0s ease-out forwards;
 }
 
@@ -159,6 +159,10 @@ a {
   color: #fff;
   font-family: 'harlow solid italic';
   font-size: var(--nav);
+  border: 1px solid #00FFD4;
+  border-radius: 60px;
+  padding: 6px 12px;
+  box-shadow: 1px 1px 2px #00FFD4, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00FFD4, 0 0 8px #00FFD4, 0 0 10px #00FFD4, 0 0 12px #00FFD4, 0 0 15px #00FFD4;
 }
 
 a.projects {
@@ -181,6 +185,14 @@ nav a:hover {
   * {
     margin: 0;
     padding: 0;
+  }
+
+  #front, #dev {
+    font-size: 2.5rem;
+  }
+
+  a.projects {
+    font-size: calc(var(--nav)*1.25);
   }
 
   body {
@@ -230,6 +242,10 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 6% 12% 6% 12%;
+  }
+
+  #front, #dev {
+    font-size: var(--frontDev);
   }
 
   :root {

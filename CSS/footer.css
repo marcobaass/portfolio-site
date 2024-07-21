@@ -61,7 +61,7 @@ footer p {
   border: 1px solid #00FFD4;
   border-radius: 8px;
   padding: 4px 8px;
-  box-shadow: 1px 1px 2px #00FFD4, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00FFD4, 0 0 8px #00FFD4, 0 0 10px #00FFD4, 0 0 12px #00FFD4, 0 0 15px #00FFD4;;
+  box-shadow: 1px 1px 2px #00FFD4, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00FFD4, 0 0 8px #00FFD4, 0 0 10px #00FFD4, 0 0 12px #00FFD4, 0 0 15px #00FFD4;
 }
 
 .content {
