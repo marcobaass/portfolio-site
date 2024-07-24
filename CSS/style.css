@@ -165,6 +165,13 @@ a {
   box-shadow: 1px 1px 2px #00FFD4, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00FFD4, 0 0 8px #00FFD4, 0 0 10px #00FFD4, 0 0 12px #00FFD4, 0 0 15px #00FFD4;
 }
 
+#more {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
 a.projects {
   font-size: calc(var(--nav)*1.75);
 }

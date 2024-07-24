@@ -8,6 +8,12 @@ img {
   /* min-height: 100px; */
 }
 
+.img-container {
+  display: grid;
+  margin-inline: auto;
+  max-width: 1400px;
+}
+
 .fullsize {
   max-width: 100%;
   width: 100%;
@@ -24,7 +30,7 @@ img {
   font-size: 1.75rem;
   margin: 0.75rem;
   z-index: 5;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0);
   border: none;
   text-shadow: -1px 0px 1px #fff, 0px -1px 1px #fff, 0px 0px 8px #fff;
 }

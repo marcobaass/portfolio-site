@@ -55,7 +55,7 @@ section > a > h1 {
   font-size: 1.75rem;
   margin: 0.75rem;
   z-index: 5;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0);
   border: none;
   text-shadow: -1px 0px 1px #fff, 0px -1px 1px #fff, 0px 0px 8px #fff;
 }
@@ -92,7 +92,7 @@ section > a > h1 {
 
   .img-portrait img {
     border-radius: 16px;
-    width: 100%;
+    width: 45%;
   }
 
   .img-landscape img{
@@ -123,7 +123,7 @@ section > a > h1 {
     font-size: 1.75rem;
     margin: 0.75rem;
     z-index: 5;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0);
     border: none;
     text-shadow: -1px 0px 1px #fff, 0px -1px 1px #fff, 0px 0px 8px #fff;
   }
@@ -131,6 +131,14 @@ section > a > h1 {
 
 
 @media only screen and (min-width: 415px) {
+
+  section > a > h1 {
+    font-family: 'harlow solid italic';
+    text-align: center;
+    padding: 0rem;
+    margin: 3.5rem 0 0 0;
+    font-size: calc(3rem + 0.390625vw);
+  }
 
   .img-portrait {
     display: flex;
@@ -144,7 +152,7 @@ section > a > h1 {
 
   .img-portrait img {
     border-radius: 16px;
-    width: 100%;
+    width: 45%;
   }
 
   .text-container {
