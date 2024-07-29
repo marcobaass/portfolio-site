@@ -111,6 +111,8 @@ span {
   font-family: 'ITC Eras Light';
   font-size: calc(15px + 0.390625vw);
   text-decoration: underline;
+  box-shadow: none;
+  border: none;
 }
 
 .content li {
