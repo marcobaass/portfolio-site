@@ -1,10 +1,9 @@
-
 body {
   background-color: black;
 }
 
 section > a > h1 {
-  font-family: 'harlow solid italic';
+  font-family: "Audiowide", sans-serif;
   text-align: center;
   padding: 2rem;
   font-size: calc(6rem + 0.390625vw);
@@ -22,7 +21,7 @@ section > a > h1 {
 .text-container p {
   text-align: start;
   color: #00FFD4;
-  font-family: 'ITC Eras Light';
+  font-family: "Orbitron", sans-serif;
   font-size: calc(18px + 0.390625vw);
   letter-spacing: 4px;
   /* margin: 2rem 0; */
@@ -74,7 +73,7 @@ section > a > h1 {
 @media only screen and (max-width: 414px) {
 
   section > a > h1 {
-    font-family: 'harlow solid italic';
+    font-family: "Audiowide", sans-serif;
     text-align: center;
     padding: 0rem;
     margin: 3.5rem 0 0 0;
@@ -133,7 +132,7 @@ section > a > h1 {
 @media only screen and (min-width: 415px) {
 
   section > a > h1 {
-    font-family: 'harlow solid italic';
+    font-family: "Audiowide", sans-serif;
     text-align: center;
     padding: 0rem;
     margin: 3.5rem 0 0 0;
@@ -271,7 +270,7 @@ section > a > h1 {
   text-wrap: balance;
   text-align: start;
   color: #00FFD4;
-  font-family: 'ITC Eras Light';
+  font-family: "Orbitron", sans-serif;
   font-size: calc(18px + 0.390625vw);
   letter-spacing: 4px;
 }

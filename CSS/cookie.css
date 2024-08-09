@@ -1,3 +1,5 @@
+@import './font.css';
+
 .container {
   width: 75%;
   background-color: rgba(255, 255, 255, 0);
@@ -14,7 +16,7 @@
 
 p {
   color: #00FFD4;
-  font-family: 'ITC Eras Light';
+  font-family: "Orbitron", sans-serif;
   font-size: calc(18px + 0.390625vw);
   letter-spacing: 2px;
   line-height: .625;
@@ -46,7 +48,7 @@ span {
   border-radius: 32px;
   border: 1px solid white;
   padding: 4px 8px;
-  font-family: harlow solid italic;
+  font-family: "Audiowide", sans-serif;
   color: white;
   font-size: calc(12px + 0.390625vw);
   margin: 16px 16px;
@@ -77,28 +79,28 @@ span {
 }
 
 .content h1 {
-  font-family: 'ITC Eras Light';
+  font-family: "Orbitron", sans-serif;
   color: #00FFD4;
 }
 
 .content h2 {
-  font-family: 'ITC Eras Light';
+  font-family: "Orbitron", sans-serif;
   color: #00FFD4;
 }
 
 .content h2:hover {
-  font-family: 'ITC Eras Light';
+  font-family: "Orbitron", sans-serif;
   color: #00FFD4;
   transform: none;
 }
 
 .content h3 {
-  font-family: 'ITC Eras Light';
+  font-family: "Orbitron", sans-serif;
   color: #00FFD4;
 }
 
 .content h3:hover {
-  font-family: 'ITC Eras Light';
+  font-family: "Orbitron", sans-serif;
   color: #00FFD4;
   transform: none;
 }
@@ -108,7 +110,7 @@ span {
 }
 
 .content a {
-  font-family: 'ITC Eras Light';
+  font-family: "Orbitron", sans-serif;
   font-size: calc(15px + 0.390625vw);
   text-decoration: underline;
   box-shadow: none;
@@ -117,7 +119,7 @@ span {
 
 .content li {
   color: #00FFD4;
-  font-family: 'ITC Eras Light';
+  font-family: "Orbitron", sans-serif;
   font-size: calc(15px + 0.390625vw);
   list-style: disc;
   margin-left: 3rem;
@@ -126,7 +128,7 @@ span {
 
 .content li p{
   color: #00FFD4;
-  font-family: 'ITC Eras Light';
+  font-family: "Orbitron", sans-serif;
   font-size: calc(15px + 0.390625vw);
   list-style: disc;
   padding-left: 0;
@@ -170,7 +172,7 @@ body.blur::before {
 @media only screen and (min-width: 320px) {
   p {
     color: #00FFD4;
-    font-family: 'ITC Eras Light';
+    font-family: "Orbitron", sans-serif;
     font-size: calc(18px + 0.390625vw);
     letter-spacing: 2px;
     line-height: 1.125;

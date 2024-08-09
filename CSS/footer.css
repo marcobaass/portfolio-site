@@ -1,3 +1,5 @@
+@import './font.css';
+
 footer {
   display: flex;
   flex-direction: column;
@@ -18,7 +20,7 @@ footer {
 footer p {
   text-align: start;
   color: #00FFD4;
-  font-family: 'ITC Eras Light';
+  font-family: "Orbitron", sans-serif;
   font-size: calc(18px + 0.390625vw);
   letter-spacing: 4px;  /* margin: 2rem 0; */
 }

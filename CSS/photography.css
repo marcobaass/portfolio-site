@@ -1,3 +1,5 @@
+@import './font.css';
+
 body {
   background-color: black;
 }
@@ -78,7 +80,7 @@ img {
   text-wrap: balance;
   text-align: start;
   color: #00FFD4;
-  font-family: 'ITC Eras Light';
+  font-family: "Orbitron", sans-serif;
   font-size: calc(18px + 0.390625vw);
   letter-spacing: 4px;
 }

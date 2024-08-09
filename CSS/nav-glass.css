@@ -32,7 +32,7 @@ ul {
 }
 
 li {
-  font-family: 'harlow solid italic', sans-serif;
+  font-family: "Audiowide", sans-serif;
   font-size: 2rem;
   font-weight: 100;
   padding: 1rem 0;
@@ -99,7 +99,7 @@ a:hover {
   }
 
   li {
-    font-family: 'harlow solid italic', sans-serif;
+    font-family: "Audiowide", sans-serif;
     font-size: 2rem;
     font-weight: 100;
     padding: 4rem;

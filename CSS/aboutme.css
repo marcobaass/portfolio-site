@@ -5,16 +5,15 @@ body {
 /* fonts */
 
 article p {
-  /* font-family: 'harlow solid italic'; */
   color: #00FFD4;
-  font-family: 'ITC Eras Light';
+  font-family: "Orbitron", sans-serif;
   font-size: calc(18px + 0.390625vw);
   letter-spacing: 4px;
   margin: 2rem 0;
 }
 
 .iam {
-  font-family: 'harlow solid italic';
+  font-family: "Audiowide", sans-serif;
   color: whitesmoke;
   font-size: calc(28px + 0.390625vw);
   letter-spacing: 0px;
@@ -67,7 +66,7 @@ article p {
   text-wrap: balance;
   text-align: start;
   color: #00FFD4;
-  font-family: 'ITC Eras Light';
+  font-family: "Orbitron", sans-serif;
   font-size: calc(18px + 0.390625vw);
   letter-spacing: 4px;
 }
